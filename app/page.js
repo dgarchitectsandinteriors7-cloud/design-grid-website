@@ -272,13 +272,13 @@ export default function DesignGridWebsite() {
 </a>
 
             <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-full border border-red-500/30 hover:bg-red-600 hover:text-white transition"
-            >
-              YouTube
-            </a>
+  href="https://www.youtube.com/@dgarchitectsandinteriors"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 rounded-full border border-red-500/30 hover:bg-red-600 hover:text-white transition"
+>
+  YouTube
+</a>
           </div>
         </div>
       </section>
