@@ -4,22 +4,22 @@ export default function DesignGridWebsite() {
   {
     category: "Living Room",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
   },
   {
     category: "Bedroom",
     image:
-      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=800&auto=format&fit=crop",
   },
   {
   category: "Modular Kitchen",
   image:
-    "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1400&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=800&auto=format&fit=crop",
 },
   {
     category: "Architecture",
     image:
-      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=800&auto=format&fit=crop",
   },
    
 ];
@@ -249,10 +249,9 @@ export default function DesignGridWebsite() {
     <video
       src="/videos/project-video.mp4"
       controls
-      autoPlay
       muted
       loop
-      className="w-full"
+      className="w-full rounded-3xl"
     ></video>
   </div>
 </div>
