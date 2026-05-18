@@ -271,7 +271,7 @@ export default function DesignGridWebsite() {
   Instagram
 </a>
 
-            <a
+           <a
   href="https://www.youtube.com/@dgarchitectsandinteriors"
   target="_blank"
   rel="noopener noreferrer"
