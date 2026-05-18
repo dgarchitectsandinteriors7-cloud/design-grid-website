@@ -1,11 +1,27 @@
 "use client";
 export default function DesignGridWebsite() {
   const projects = [
-    'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1616594039964-3c8f1c6f84ba?q=80&w=1400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1400&auto=format&fit=crop',
-  ];
+  {
+    category: "Living Room",
+    image:
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1400&auto=format&fit=crop",
+  },
+  {
+    category: "Bedroom",
+    image:
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1400&auto=format&fit=crop",
+  },
+  {
+    category: "Modular Kitchen",
+    image:
+      "https://images.unsplash.com/photo-1616594039964-3c8f1c6f84ba?q=80&w=1400&auto=format&fit=crop",
+  },
+  {
+    category: "Architecture",
+    image:
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1400&auto=format&fit=crop",
+  },
+];
 
   const services = [
     {
@@ -191,7 +207,7 @@ export default function DesignGridWebsite() {
             </p>
 
             <h3 className="text-5xl font-bold mb-6">
-              Luxury Interior Gallerys
+              Luxury Interior Gallery
             </h3>
 
             <p className="text-gray-400 max-w-3xl mx-auto text-lg">
@@ -200,21 +216,35 @@ export default function DesignGridWebsite() {
             </p>
           </div>
 
-          <div className="columns-1 md:columns-2 gap-6 space-y-6">
-  {projects.map((img, index) => (
-    <div
-      key={index}
-      className="overflow-hidden rounded-3xl shadow-2xl group break-inside-avoid"
-    >
-      <img
-        src={img}
-        alt={`Project ${index + 1}`}
-        className="w-full object-cover group-hover:scale-105 transition duration-500"
-      />
-    </div>
-  ))}
+          <div className="space-y-16">
+  {["Living Room", "Bedroom", "Modular Kitchen", "Architecture"].map(
+    (room) => (
+      <div key={room}>
+        <h4 className="text-3xl font-bold mb-8 text-yellow-500">
+          {room}
+        </h4>
 
-  <div className="overflow-hidden rounded-3xl shadow-2xl break-inside-avoid">
+        <div className="grid md:grid-cols-2 gap-6">
+          {projects
+            .filter((project) => project.category === room)
+            .map((project, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-3xl shadow-2xl group"
+              >
+                <img
+                  src={project.image}
+                  alt={room}
+                  className="w-full object-cover group-hover:scale-105 transition duration-500"
+                />
+              </div>
+            ))}
+        </div>
+      </div>
+    )
+  )}
+
+  <div className="overflow-hidden rounded-3xl shadow-2xl">
     <video
       src="/videos/project-video.mp4"
       controls
