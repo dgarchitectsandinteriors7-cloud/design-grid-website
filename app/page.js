@@ -1,3 +1,4 @@
+"use client";
 export default function DesignGridWebsite() {
   const projects = [
     'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1400&auto=format&fit=crop',
@@ -261,14 +262,14 @@ export default function DesignGridWebsite() {
           </h4>
 
           <div className="flex justify-center gap-6 flex-wrap">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-full border border-pink-500/30 hover:bg-pink-500 hover:text-white transition"
-            >
-              Instagram
-            </a>
+           <a
+  href="https://www.instagram.com/dgai_architects_interiors/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 rounded-full border border-pink-500/30 hover:bg-pink-500 hover:text-white transition"
+>
+  Instagram
+</a>
 
             <a
               href="https://youtube.com"
