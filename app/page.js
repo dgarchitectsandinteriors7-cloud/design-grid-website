@@ -217,36 +217,90 @@ export default function DesignGridWebsite() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="py-24 px-6 bg-black">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-yellow-500 uppercase tracking-[4px] mb-4">
-            Contact Us
-          </p>
+      # Add Contact Form to Your Website
 
-          <h3 className="text-5xl font-bold mb-10">
-            Let’s Build Your Dream Space
-          </h3>
+Replace your current `Contact` section with this code inside `app/page.js`.
 
-          <div className="bg-[#181818] rounded-3xl p-10 border border-yellow-700/20 shadow-2xl space-y-5 text-lg text-gray-300">
-            <p>
-              📞 <span className="text-white">8790043024</span>
-            </p>
+```jsx
+{/* Contact */}
+<section id="contact" className="py-24 px-6 bg-black">
+  <div className="max-w-5xl mx-auto text-center">
+    <p className="text-yellow-500 uppercase tracking-[4px] mb-4">
+      Contact Us
+    </p>
 
-            <p>
-              ✉️
-              <span className="text-white ml-2">
-                dgarchitectsandinteriors7@gmail.com
-              </span>
-            </p>
+    <h3 className="text-5xl font-bold mb-10">
+      Let’s Build Your Dream Space
+    </h3>
 
-            <p className="leading-relaxed">
-              📍 LIG 19/6 FIRST FLOOR 3rd PHASE, RAMYA GROUND KPHB
-              COLONY, KUKATPALLY, MEDCHAL (MALKAJGIRI), 500072
-            </p>
-          </div>
-        </div>
-      </section>
+    <div className="grid md:grid-cols-2 gap-10 items-start">
+      {/* Contact Info */}
+      <div className="bg-[#181818] rounded-3xl p-10 border border-yellow-700/20 shadow-2xl space-y-5 text-lg text-gray-300 text-left">
+        <p>
+          📞 <span className="text-white">8790043024</span>
+        </p>
+
+        <p>
+          ✉️
+          <span className="text-white ml-2">
+            dgarchitectsandinteriors7@gmail.com
+          </span>
+        </p>
+
+        <p className="leading-relaxed">
+          📍 LIG 19/6 FIRST FLOOR 3rd PHASE, RAMYA GROUND KPHB
+          COLONY, KUKATPALLY, MEDCHAL (MALKAJGIRI), 500072
+        </p>
+      </div>
+
+      {/* Contact Form */}
+      <form className="bg-[#181818] rounded-3xl p-10 border border-yellow-700/20 shadow-2xl space-y-6">
+        <input
+          type="text"
+          placeholder="Your Name"
+          className="w-full p-4 rounded-xl bg-black border border-gray-700 text-white outline-none focus:border-yellow-500"
+        />
+
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          className="w-full p-4 rounded-xl bg-black border border-gray-700 text-white outline-none focus:border-yellow-500"
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="w-full p-4 rounded-xl bg-black border border-gray-700 text-white outline-none focus:border-yellow-500"
+        />
+
+        <textarea
+          rows="5"
+          placeholder="Tell us about your project"
+          className="w-full p-4 rounded-xl bg-black border border-gray-700 text-white outline-none focus:border-yellow-500"
+        ></textarea>
+
+        <button
+          type="submit"
+          className="w-full bg-yellow-500 text-black py-4 rounded-xl font-semibold hover:scale-105 transition duration-300"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+```
+
+After saving:
+
+```bash
+git add .
+git commit -m "Added contact form"
+git push
+```
+
+Then wait 1–2 minutes for Vercel to update your website.
+
 
       {/* Footer */}
       <footer className="bg-[#0b0b0b] border-t border-yellow-700/20 py-8 text-center text-gray-500 text-sm tracking-wide">
