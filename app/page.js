@@ -201,7 +201,6 @@ export default function DesignGridWebsite() {
           </div>
 
           <div className="columns-1 md:columns-2 gap-6 space-y-6">
-
   {projects.map((img, index) => (
     <div
       key={index}
@@ -225,10 +224,10 @@ export default function DesignGridWebsite() {
       className="w-full"
     ></video>
   </div>
-
 </div>
+ </div>
+      </section>
 
-      
 {/* Contact */}
 <section id="contact" className="py-24 px-6 bg-black">
   <div className="max-w-5xl mx-auto text-center">
