@@ -215,7 +215,6 @@ export default function DesignGridWebsite() {
     </div>
   ))}
 
-  {/* Video */}
   <div className="overflow-hidden rounded-3xl shadow-2xl break-inside-avoid">
     <video
       src="/videos/project-video.mp4"
@@ -297,17 +296,6 @@ export default function DesignGridWebsite() {
     </div>
   </div>
 </section>
-```
-
-After saving:
-
-```bash
-git add .
-git commit -m "Added contact form"
-git push
-```
-
-Then wait 1–2 minutes for Vercel to update your website.
 
 
       {/* Footer */}
