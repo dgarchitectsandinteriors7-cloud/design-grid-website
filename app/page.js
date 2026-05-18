@@ -12,10 +12,10 @@ export default function DesignGridWebsite() {
       "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1400&auto=format&fit=crop",
   },
   {
-    category: "Modular Kitchen",
-    image:
-      "https://images.unsplash.com/photo-1616594039964-3c8f1c6f84ba?q=80&w=1400&auto=format&fit=crop",
-  },
+  category: "Modular Kitchen",
+  image:
+    "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1400&auto=format&fit=crop",
+},
   {
     category: "Architecture",
     image:
