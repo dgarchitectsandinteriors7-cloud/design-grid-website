@@ -201,27 +201,35 @@ export default function DesignGridWebsite() {
           </div>
 
           <div className="columns-1 md:columns-2 gap-6 space-y-6">
-            {projects.map((img, index) => (
-              <div
-                key={index}
-                className="overflow-hidden rounded-3xl shadow-2xl group break-inside-avoid"
-              >
-                <img
-                  src={img}
-                  alt={`Project ${index + 1}`}
-                  className="w-full object-cover group-hover:scale-105 transition duration-500"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      # Add Contact Form to Your Website
+  {projects.map((img, index) => (
+    <div
+      key={index}
+      className="overflow-hidden rounded-3xl shadow-2xl group break-inside-avoid"
+    >
+      <img
+        src={img}
+        alt={`Project ${index + 1}`}
+        className="w-full object-cover group-hover:scale-105 transition duration-500"
+      />
+    </div>
+  ))}
 
-Replace your current `Contact` section with this code inside `app/page.js`.
+  {/* Video */}
+  <div className="overflow-hidden rounded-3xl shadow-2xl break-inside-avoid">
+    <video
+      src="/videos/project-video.mp4"
+      controls
+      autoPlay
+      muted
+      loop
+      className="w-full"
+    ></video>
+  </div>
 
-```jsx
+</div>
+
+      
 {/* Contact */}
 <section id="contact" className="py-24 px-6 bg-black">
   <div className="max-w-5xl mx-auto text-center">
