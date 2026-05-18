@@ -21,11 +21,7 @@ export default function DesignGridWebsite() {
     image:
       "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1400&auto=format&fit=crop",
   },
-   {
-    category: "Videos",
-    image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1400&auto=format&fit=crop",
-  },
+   
 ];
 
   const services = [
